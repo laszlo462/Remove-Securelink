@@ -13,8 +13,8 @@ function Invoke-Uninstall
 
     process
     {
-        Start-Process -FilePath "$slPath\SecureLinkCM.exe" -ArgumentList "-uninstall" -Wait -NoNewWindow
-        if (!Find-Securelink($slPath))
+        Start-Process -FilePath "$slPath\SecureLinkCM.exe" -ArgumentList "-uninstall" -Wait -NoNewWindow -ErrorAction Continue
+        if ($?)
         {
             Write-Host "Success"
         }
