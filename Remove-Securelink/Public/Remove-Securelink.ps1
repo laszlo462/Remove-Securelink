@@ -18,9 +18,7 @@ function Remove-Securelink
         $slPath = "C:\Users\$env:USERNAME\AppData\Local\SecureLink"
 
         # First check that SecureLink is indeed present.
-        $slExists = Find-Securelink($slPath)
-
-        if ($slExists)
+        if (Find-Securelink($slPath))
         {
             Invoke-Uninstall($slPath)
         }
