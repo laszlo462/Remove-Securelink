@@ -24,6 +24,9 @@ Then, to manually import the module, execute the following:
 
 Or, add the above line to your Microsoft.PowerShell_profile.ps1 to automatically load the module whenever a Powershell terminal is opened.
 
+### Powershell Gallery Link
+https://www.powershellgallery.com/packages/Remove-Securelink/1.0.0
+
 ## <a name="functions">Functions</a>
 
 ### Public functions
